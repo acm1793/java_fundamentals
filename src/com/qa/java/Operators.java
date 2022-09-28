@@ -73,7 +73,10 @@ public class Operators {
 		// If both the expressions are evaluated to the same result, then the resultant
 		// is false
 		/*
-		 * T T -> F T F -> T F T -> T F F -> F
+		 * T T -> F 
+		 * T F -> T 
+		 * F T -> T 
+		 * F F -> F
 		 */
 	}
 
