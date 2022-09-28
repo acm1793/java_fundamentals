@@ -6,17 +6,25 @@ public class ProductObjects {
 		// Creating objects for my Product Class
 
 		Product product;
-		product = new Product("Banana", 2, "Fruit", 4, 10, true);
+		product = new Product("Banana", 20, "Fruit", 4, 10, true);
 		/*System.out.println("name: " + product.name);
 		*System.out.println("price: " + product.price);
 		*System.out.println("category: " + product.category);
 		*System.out.println("rating " + product.rating);
 		*System.out.println("discountPercentage " + product.discountPercentage);
 		*System.out.println("isAvailable: " + product.isAvailable);
-
-		*System.out.println("-------------------------------");
 		*/
+		
 		product.displayProductInformation();
+		System.out.println("***************************");
+		
+		double productDiscountPrice = product.productDiscountPrice();
+		System.out.println(productDiscountPrice);
+		System.out.println(product.name + "'s discount price is: " + product.productDiscountPrice());
+		
+		double productFinalPrice = product.productFinalPrice();
+		System.out.println(productFinalPrice);
+		System.out.println(product.name + "'s final price is: " + product.productFinalPrice());
 		
 		/*product.name = "Banana";
 		*product.price = 2;
@@ -38,9 +46,14 @@ public class ProductObjects {
 		
 		
 		Product product2;
-		product2 = new Product("Tomato", 1, "Vegetable", 5, 8, true);
+		product2 = new Product("Tomato", 18, "Vegetable", 5, 8, true);
 		
 		product2.displayProductInformation();
+		System.out.println("***************************");
+		System.out.println(product2.name + "'s discount price is: " + product2.productDiscountPrice());
+		System.out.println(product2.name + "'s final price is: " + product2.productFinalPrice());
+		
+		
 		
 		/*product2.name = "Tomato";
 		*product2.price = 1;
@@ -61,9 +74,12 @@ public class ProductObjects {
 		
 		
 		Product product3;
-		product3 = new Product("Cherry", 3, "Fruit", 4, 0, false);
+		product3 = new Product("Cherry", 30, "Fruit", 4, 0, false);
 		
 		product3.displayProductInformation();
+		System.out.println("***************************");
+		System.out.println(product3.name + "'s discount price is: " + product3.productDiscountPrice());
+		System.out.println(product3.name + "'s final price is: " + product3.productFinalPrice());
 		
 		/*product3.name = "Cherry";
 		*product3.price = 3;
