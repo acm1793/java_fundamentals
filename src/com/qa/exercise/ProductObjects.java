@@ -1,4 +1,4 @@
-package com.qa.oop;
+package com.qa.exercise;
 
 public class ProductObjects {
 
