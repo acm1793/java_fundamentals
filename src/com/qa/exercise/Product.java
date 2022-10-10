@@ -1,10 +1,12 @@
 package com.qa.exercise;
 
+import com.qa.oop.Employee;
+
 public class Product {
 	
 	
 	String name;
-	int price;
+	public int price;
 	String category;
 	int rating;
 	int discountPercentage;
@@ -46,6 +48,13 @@ public class Product {
 	double productFinalPrice() {
 		return price - productDiscountPrice();
 
+	}
+	
+	void getEmployee() {
+		Employee a1 = new Employee();
+		a1.displayEmployeeInformation();
+		Employee.testEmployee();
+		
 	}
 
 }
