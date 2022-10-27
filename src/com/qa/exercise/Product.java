@@ -1,7 +1,5 @@
 package com.qa.exercise;
 
-import com.qa.oop.Employee;
-
 public class Product {
 	
 	
@@ -50,11 +48,5 @@ public class Product {
 
 	}
 	
-	void getEmployee() {
-		Employee a1 = new Employee();
-		a1.displayEmployeeInformation();
-		Employee.testEmployee();
-		
-	}
 
 }
